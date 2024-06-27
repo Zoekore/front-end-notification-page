@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+    --White: hsl(0, 0%, 100%);
+    --Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --Light-grayish-blue-1: hsl(211, 68%, 94%);
+    --Light-grayish-blue-2: hsl(205, 33%, 90%);
+    --Grayish-blue: hsl(219, 14%, 63%);
+    --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Very-dark-blue: hsl(224, 21%, 14%);
+}
+body {
+    background-color: var(--White);
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem 1rem;
+    font-size: 0.8rem;
+    font-family:"Plus Jakarta Sans", sans-serif;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight: 500;
+    align-items: center;
+    color: var(--Very-dark-blue);
+    
+}
+button{
+    font-family: "Plus Jakarta Sans",sans-serif;
+    font-size: 1.1rem;
+    margin-left: 0.5rem;
+    padding: 0.2rem 1rem;
+    border:none;
+    border-radius: 0.5rem;
+    background-color: var(--Blue);
+    color: var(--White);
+    
+}
+.header p{
+    align-items: center;
+}
+.header span{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--Dark-grayish-blue);
+}
+img {
+    object-fit: contain;
+}
+.MarkWeber{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--Very-light-grayish-blue);
+    padding: 1rem;
+}
+.team {
+    color: var(--Dark-grayish-blue);
+}
+.Angela-gray{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--Very-light-grayish-blue);
+    padding: 1rem;
+}
+.Jacob-thompson{
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--Very-light-grayish-blue);
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 1rem;
+}
+.Rizky-Han{
+    margin-top: 1.5rem;
+    border: none;
+    display: flex;
+    padding: 1rem;
+    align-items: start;
+}
+.Kimberly-smith{
+    margin-top: 1.5rem;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 1rem;
+}
+.Kimberly-smith .web{
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+.Nathan-peterson{
+    margin-top: 1.5rem;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 1rem;
+}
+.Anna-kim{
+    margin-top: 1.5rem;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 1rem;
+}
+.messages{
+    margin-top: 0.5rem;
+    padding:0.5rem;
+    border: 1px solid var(--Very-dark-blue) 
+}
+.web{
+    width: 75%;
+    margin: auto;
+    line-spacing: 0.0437rem;
+}
+span{
+    font-weight: 700;
+}
+b{
+    color: var(--Blue);
+    font-weight: 800;
+}
+.dot{
+    margin-left: 5px;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: var(--Red);
+    display: inline-block;
+}
+@media (min-width: 1440px){
+    body{
+        font-size: 0.9rem;
+        height: 100vh;
+        width: 100vw;
+        margin: 3rem;
+        padding: 1rem 20rem;
+        background-color: var(--Light-grayish-blue-2);
+    }
+    main{
+        background-color: var(--White);
+        padding: 1rem;
+
+    }
+    .messages:hover:not(.alert){
+        background-color: var(--Light-grayish-blue-1);
+        transition: 0.2s;
+        border:none;
+    }
+    main span,img,b,.messages{
+        cursor: pointer;
+    }
+    span:hover:not(.alert){
+        color: var(--Blue);
+        transition: 0.2s;
+    }
+
+
+}
